@@ -1,4 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700);
+@import url("https://cdn.jsdelivr.net/gh/phothinmg/burmese-fonts@main/dist/028/index.css");
+
+*{
+  font-family: burmese-028 !important;
+}
 
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
