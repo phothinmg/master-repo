@@ -1,0 +1,8 @@
+.clink{
+  color: #585858;
+}
+@media (prefers-color-scheme: dark){
+  .clink{ 
+    color: goldenrod;
+  }
+}
