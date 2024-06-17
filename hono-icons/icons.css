@@ -1,12 +1,18 @@
+
+:root{
+  --clink-color: #5858;
+}
+html[data-theme="light"]{
+  --clink-color: #5858;
+}
+html[data-theme="dark"]{
+  --clink-color: #ababab;
+}
 .clink{
-  color: red;
+  color: var(--clink-color);
   text-decoration: none;
 }
 .clink:hover{
-  color: chartreuse;
+  color: goldenrod;
 }
-@media (prefers-color-scheme: dark){
-  .clink{ 
-    color: goldenrod;
-  }
-}
+
