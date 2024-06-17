@@ -1,9 +1,9 @@
 
 :root{
-  --clink-color: #5858;
+  --clink-color: #585858;
 }
 html[data-theme="light"]{
-  --clink-color: #5858;
+  --clink-color: #585858;
 }
 html[data-theme="dark"]{
   --clink-color: #ababab;
