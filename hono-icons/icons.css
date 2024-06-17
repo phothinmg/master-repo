@@ -1,5 +1,9 @@
 .clink{
-  color: #585858;
+  color: red;
+  text-decoration: none;
+}
+.clink:hover{
+  color: chartreuse;
 }
 @media (prefers-color-scheme: dark){
   .clink{ 
