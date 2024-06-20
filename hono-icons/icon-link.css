@@ -5,4 +5,5 @@
 #iconLink > svg:hover path{
   transition: all ease 0.3s;
   stroke: red;
+  border: none;
 }
