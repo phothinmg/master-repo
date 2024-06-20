@@ -9,12 +9,12 @@
 
 #iconLink > svg:hover path{
   transition: all ease 0.3s;
-  stroke: goldenrod;
+  fill: goldenrod;
 }
 
 @media (prefers-color-scheme: dark){
   #iconLink > svg path {
-     stroke:  #ababab;
+     fill:  #ababab;
   
   }
 }
