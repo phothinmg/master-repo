@@ -1,8 +1,0 @@
-#iconLink > svg path {
-  transition: all ease 0.3s;
-}
-
-#iconLink > svg:hover path{
-  transition: all ease 0.3s;
-  fill: red;
-}
