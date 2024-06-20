@@ -1,0 +1,20 @@
+#iconLink {
+  text-decoration: none;
+}
+
+#iconLink > svg path {
+  transition: all ease 0.3s;
+  
+}
+
+#iconLink > svg:hover path{
+  transition: all ease 0.3s;
+  stroke: goldenrod;
+}
+
+@media (prefers-color-scheme: dark){
+  #iconLink > svg path {
+    color:  #ababab;
+  
+  }
+}
