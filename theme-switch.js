@@ -52,19 +52,14 @@ function calculateSettingAsThemeString({
           />
           </svg>`
       : `<svg 
-          enable-background="new 0 0 512 512" 
-          height="24px" 
-          id="Layer_1" 
-          version="1.1" 
-          viewBox="0 0 512 512" 
-          width="24px" 
-          xml:space="preserve" 
-          xmlns="http://www.w3.org/2000/svg" 
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          fill="currentColor"
-          >
-          <path d="M264,480A232,232,0,0,1,32,248C32,154,86,69.72,169.61,33.33a16,16,0,0,1,21.06,21.06C181.07,76.43,176,104.66,176,136c0,110.28,89.72,200,200,200,31.34,0,59.57-5.07,81.61-14.67a16,16,0,0,1,21.06,21.06C442.28,426,358,480,264,480Z"/>
-          </svg>
+height="18"
+ viewBox="0 0 512 512" 
+ width="18" 
+ xmlns="http://www.w3.org/2000/svg" 
+ fill="currentColor" 
+ >
+ <path d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z"/>
+ </svg>
           `;
   button.innerHTML = currentCta;
   button.addEventListener("click", () => {
