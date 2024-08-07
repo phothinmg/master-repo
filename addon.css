@@ -107,9 +107,6 @@ footer {
   text-align: center;
   width: 100%;
   display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 footer a {
   color: var(--cfg);
