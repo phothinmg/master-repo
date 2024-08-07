@@ -1,0 +1,126 @@
+.blog-nav {
+  padding: 10px;
+  display: block;
+}
+.blog-nav .left-blog {
+  float: left;
+}
+.blog-nav .left-blog a {
+  color: var(--cfg);
+  text-decoration: none;
+}
+.blog-nav .left-blog a i {
+  margin-right: 18px;
+}
+.blog-nav .left-blog a:hover {
+  cursor: pointer;
+  color: var(--clink);
+}
+.blog-nav .right-blog {
+  float: right;
+}
+.blog-nav .right-blog a {
+  color: var(--cfg);
+  text-decoration: none;
+}
+.blog-nav .right-blog a i {
+  margin-left: 18px;
+}
+.blog-nav .right-blog a:hover {
+  cursor: pointer;
+  color: var(--clink);
+}
+.post {
+  display: block;
+}
+.post div.post-head {
+  border-bottom: 0.5px double var(--cfg);
+  padding-bottom: 5px;
+}
+.post div.post-head h5 {
+  font-weight: 600;
+}
+.post div.post-head small {
+  margin-right: 27px;
+  font-style: italic;
+  font-weight: 600;
+}
+.post div.post-body {
+  padding: 5px;
+  display: contents;
+}
+.post div.post-body h1 {
+  margin-top: 18px;
+}
+.post div.post-body h2 {
+  margin-top: 18px;
+}
+.post div.post-body h3 {
+  margin-top: 18px;
+}
+.post div.post-body h4 {
+  margin-top: 18px;
+}
+.post div.post-body h5 {
+  margin-top: 18px;
+}
+.post div.post-body h6 {
+  margin-top: 18px;
+}
+.post div.post-body p {
+  text-align: justify;
+  text-indent: 36px;
+}
+.post div.post-body img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+}
+div.card a {
+  color: var(--cfg);
+  text-decoration: none;
+}
+div.card a:hover {
+  cursor: pointer;
+  color: var(--clink);
+}
+div.card small {
+  margin-right: 18px;
+  font-style: italic;
+  font-weight: 600;
+}
+header nav ul li a {
+  color: var(--cfg);
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  cursor: pointer;
+  color: var(--clink);
+}
+header nav ul li[type="button"] {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+footer a {
+  color: var(--cfg);
+  margin-right: 10px;
+  text-decoration: none;
+}
+footer a:hover {
+  cursor: pointer;
+  color: var(--clink);
+}
+footer small {
+  margin-right: 10px;
+  font-weight: 600;
+}
