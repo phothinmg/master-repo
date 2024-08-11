@@ -1035,7 +1035,6 @@ p > select {
 }
 .post div.post-body p {
   text-align: justify;
-  text-indent: 36px;
 }
 div.card a {
   color: var(--cfg);
@@ -1089,7 +1088,4 @@ footer small {
   font-optical-sizing: auto;
   color: var(--cdark);
 }
-p > img{
-  width: 100%;
-  padding: 0;
-}
+
