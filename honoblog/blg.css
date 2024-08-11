@@ -1040,7 +1040,6 @@ p > select {
 .post div.post-body img {
   border-radius: 10px;
   width: 100%;
-  max-height: fit-content;
 }
 div.card a {
   color: var(--cfg);
