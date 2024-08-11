@@ -1089,3 +1089,7 @@ footer small {
   font-optical-sizing: auto;
   color: var(--cdark);
 }
+p > img{
+  width: 100%;
+  padding: 0;
+}
