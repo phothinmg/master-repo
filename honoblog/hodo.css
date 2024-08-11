@@ -1033,13 +1033,26 @@ p > select {
 .post div.post-body h6 {
   margin-top: 18px;
 }
+/* Apply the default styles to p elements */
 .post div.post-body p {
   text-align: justify;
   text-indent: 36px;
 }
+/* Apply styles to img elements within p elements */
 .post div.post-body img {
   border-radius: 10px;
   width: 100%;
+}
+/* Override styles for p elements that only contain an img */
+.post div.post-body p:not(:only-child):not([class]) {
+  text-align: justify;
+  text-indent: 36px;
+}
+
+/* Remove styles for p elements that only contain an img */
+.post div.post-body p:only-child img {
+  text-align: initial;
+  text-indent: initial;
 }
 div.card a {
   color: var(--cfg);
