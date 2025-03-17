@@ -5,7 +5,7 @@
     .matches
     ? "dark"
     : "light";
-  const storedTheme = localStorage.getItem("theme") || preferredTheme;
+  const storedTheme = preferredTheme ?? localStorage.getItem("theme");
 
   htmlElement.classList.add(storedTheme);
   localStorage.setItem("theme", storedTheme);
