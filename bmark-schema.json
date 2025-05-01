@@ -1,0 +1,3463 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/MarkOptions",
+  "definitions": {
+    "MarkOptions": {
+      "type": "object",
+      "properties": {
+        "htmlElement": {
+          "type": "object",
+          "properties": {
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "class": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "style": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "lang": {
+                  "type": "string",
+                  "enum": [
+                    "aa",
+                    "ab",
+                    "ae",
+                    "af",
+                    "ak",
+                    "am",
+                    "an",
+                    "ar",
+                    "ar-ae",
+                    "ar-bh",
+                    "ar-dz",
+                    "ar-eg",
+                    "ar-iq",
+                    "ar-jo",
+                    "ar-kw",
+                    "ar-lb",
+                    "ar-ly",
+                    "ar-ma",
+                    "ar-om",
+                    "ar-qa",
+                    "ar-sa",
+                    "ar-sy",
+                    "ar-tn",
+                    "ar-ye",
+                    "as",
+                    "av",
+                    "ay",
+                    "az",
+                    "ba",
+                    "be",
+                    "bg",
+                    "bh",
+                    "bi",
+                    "bm",
+                    "bn",
+                    "bo",
+                    "br",
+                    "bs",
+                    "ca",
+                    "ce",
+                    "ch",
+                    "co",
+                    "cr",
+                    "cs",
+                    "cu",
+                    "cv",
+                    "cy",
+                    "da",
+                    "de",
+                    "de-at",
+                    "de-ch",
+                    "de-de",
+                    "de-li",
+                    "de-lu",
+                    "div",
+                    "dv",
+                    "dz",
+                    "ee",
+                    "el",
+                    "en",
+                    "en-au",
+                    "en-bz",
+                    "en-ca",
+                    "en-cb",
+                    "en-gb",
+                    "en-ie",
+                    "en-jm",
+                    "en-nz",
+                    "en-ph",
+                    "en-tt",
+                    "en-us",
+                    "en-za",
+                    "en-zw",
+                    "eo",
+                    "es",
+                    "es-ar",
+                    "es-bo",
+                    "es-cl",
+                    "es-co",
+                    "es-cr",
+                    "es-do",
+                    "es-ec",
+                    "es-es",
+                    "es-gt",
+                    "es-hn",
+                    "es-mx",
+                    "es-ni",
+                    "es-pa",
+                    "es-pe",
+                    "es-pr",
+                    "es-py",
+                    "es-sv",
+                    "es-us",
+                    "es-uy",
+                    "es-ve",
+                    "et",
+                    "eu",
+                    "fa",
+                    "ff",
+                    "fi",
+                    "fj",
+                    "fo",
+                    "fr",
+                    "fr-be",
+                    "fr-ca",
+                    "fr-ch",
+                    "fr-fr",
+                    "fr-lu",
+                    "fr-mc",
+                    "fy",
+                    "ga",
+                    "gd",
+                    "gl",
+                    "gn",
+                    "gu",
+                    "gv",
+                    "ha",
+                    "he",
+                    "hi",
+                    "ho",
+                    "hr",
+                    "hr-ba",
+                    "hr-hr",
+                    "ht",
+                    "hu",
+                    "hy",
+                    "hz",
+                    "ia",
+                    "id",
+                    "ie",
+                    "ig",
+                    "ii",
+                    "ik",
+                    "in",
+                    "io",
+                    "is",
+                    "it",
+                    "it-ch",
+                    "it-it",
+                    "iu",
+                    "iw",
+                    "ja",
+                    "ji",
+                    "jv",
+                    "jw",
+                    "ka",
+                    "kg",
+                    "ki",
+                    "kj",
+                    "kk",
+                    "kl",
+                    "km",
+                    "kn",
+                    "ko",
+                    "kok",
+                    "kr",
+                    "ks",
+                    "ku",
+                    "kv",
+                    "kw",
+                    "ky",
+                    "kz",
+                    "la",
+                    "lb",
+                    "lg",
+                    "li",
+                    "ln",
+                    "lo",
+                    "ls",
+                    "lt",
+                    "lu",
+                    "lv",
+                    "mg",
+                    "mh",
+                    "mi",
+                    "mk",
+                    "ml",
+                    "mn",
+                    "mo",
+                    "mr",
+                    "ms",
+                    "ms-bn",
+                    "ms-my",
+                    "mt",
+                    "my",
+                    "na",
+                    "nb",
+                    "nd",
+                    "ne",
+                    "ng",
+                    "nl",
+                    "nl-be",
+                    "nl-nl",
+                    "nn",
+                    "no",
+                    "nr",
+                    "ns",
+                    "nv",
+                    "ny",
+                    "oc",
+                    "oj",
+                    "om",
+                    "or",
+                    "os",
+                    "pa",
+                    "pi",
+                    "pl",
+                    "ps",
+                    "pt",
+                    "pt-br",
+                    "pt-pt",
+                    "qu",
+                    "qu-bo",
+                    "qu-ec",
+                    "qu-pe",
+                    "rm",
+                    "rn",
+                    "ro",
+                    "ru",
+                    "rw",
+                    "sa",
+                    "sb",
+                    "sc",
+                    "sd",
+                    "se",
+                    "se-fi",
+                    "se-no",
+                    "se-se",
+                    "sg",
+                    "sh",
+                    "si",
+                    "sk",
+                    "sl",
+                    "sm",
+                    "sn",
+                    "so",
+                    "sq",
+                    "sr",
+                    "sr-ba",
+                    "sr-sp",
+                    "ss",
+                    "st",
+                    "su",
+                    "sv",
+                    "sv-fi",
+                    "sv-se",
+                    "sw",
+                    "sx",
+                    "syr",
+                    "ta",
+                    "te",
+                    "tg",
+                    "th",
+                    "ti",
+                    "tk",
+                    "tl",
+                    "tn",
+                    "to",
+                    "tr",
+                    "ts",
+                    "tt",
+                    "tw",
+                    "ty",
+                    "ug",
+                    "uk",
+                    "ur",
+                    "us",
+                    "uz",
+                    "ve",
+                    "vi",
+                    "vo",
+                    "wa",
+                    "wo",
+                    "xh",
+                    "yi",
+                    "yo",
+                    "za",
+                    "zh",
+                    "zh-cn",
+                    "zh-hk",
+                    "zh-mo",
+                    "zh-sg",
+                    "zh-tw",
+                    "zu"
+                  ]
+                }
+              },
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "htmlHead": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "attributes": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "class": {
+                      "anyOf": [
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "style": {
+                      "anyOf": [
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "lang": {
+                      "type": "string",
+                      "enum": [
+                        "aa",
+                        "ab",
+                        "ae",
+                        "af",
+                        "ak",
+                        "am",
+                        "an",
+                        "ar",
+                        "ar-ae",
+                        "ar-bh",
+                        "ar-dz",
+                        "ar-eg",
+                        "ar-iq",
+                        "ar-jo",
+                        "ar-kw",
+                        "ar-lb",
+                        "ar-ly",
+                        "ar-ma",
+                        "ar-om",
+                        "ar-qa",
+                        "ar-sa",
+                        "ar-sy",
+                        "ar-tn",
+                        "ar-ye",
+                        "as",
+                        "av",
+                        "ay",
+                        "az",
+                        "ba",
+                        "be",
+                        "bg",
+                        "bh",
+                        "bi",
+                        "bm",
+                        "bn",
+                        "bo",
+                        "br",
+                        "bs",
+                        "ca",
+                        "ce",
+                        "ch",
+                        "co",
+                        "cr",
+                        "cs",
+                        "cu",
+                        "cv",
+                        "cy",
+                        "da",
+                        "de",
+                        "de-at",
+                        "de-ch",
+                        "de-de",
+                        "de-li",
+                        "de-lu",
+                        "div",
+                        "dv",
+                        "dz",
+                        "ee",
+                        "el",
+                        "en",
+                        "en-au",
+                        "en-bz",
+                        "en-ca",
+                        "en-cb",
+                        "en-gb",
+                        "en-ie",
+                        "en-jm",
+                        "en-nz",
+                        "en-ph",
+                        "en-tt",
+                        "en-us",
+                        "en-za",
+                        "en-zw",
+                        "eo",
+                        "es",
+                        "es-ar",
+                        "es-bo",
+                        "es-cl",
+                        "es-co",
+                        "es-cr",
+                        "es-do",
+                        "es-ec",
+                        "es-es",
+                        "es-gt",
+                        "es-hn",
+                        "es-mx",
+                        "es-ni",
+                        "es-pa",
+                        "es-pe",
+                        "es-pr",
+                        "es-py",
+                        "es-sv",
+                        "es-us",
+                        "es-uy",
+                        "es-ve",
+                        "et",
+                        "eu",
+                        "fa",
+                        "ff",
+                        "fi",
+                        "fj",
+                        "fo",
+                        "fr",
+                        "fr-be",
+                        "fr-ca",
+                        "fr-ch",
+                        "fr-fr",
+                        "fr-lu",
+                        "fr-mc",
+                        "fy",
+                        "ga",
+                        "gd",
+                        "gl",
+                        "gn",
+                        "gu",
+                        "gv",
+                        "ha",
+                        "he",
+                        "hi",
+                        "ho",
+                        "hr",
+                        "hr-ba",
+                        "hr-hr",
+                        "ht",
+                        "hu",
+                        "hy",
+                        "hz",
+                        "ia",
+                        "id",
+                        "ie",
+                        "ig",
+                        "ii",
+                        "ik",
+                        "in",
+                        "io",
+                        "is",
+                        "it",
+                        "it-ch",
+                        "it-it",
+                        "iu",
+                        "iw",
+                        "ja",
+                        "ji",
+                        "jv",
+                        "jw",
+                        "ka",
+                        "kg",
+                        "ki",
+                        "kj",
+                        "kk",
+                        "kl",
+                        "km",
+                        "kn",
+                        "ko",
+                        "kok",
+                        "kr",
+                        "ks",
+                        "ku",
+                        "kv",
+                        "kw",
+                        "ky",
+                        "kz",
+                        "la",
+                        "lb",
+                        "lg",
+                        "li",
+                        "ln",
+                        "lo",
+                        "ls",
+                        "lt",
+                        "lu",
+                        "lv",
+                        "mg",
+                        "mh",
+                        "mi",
+                        "mk",
+                        "ml",
+                        "mn",
+                        "mo",
+                        "mr",
+                        "ms",
+                        "ms-bn",
+                        "ms-my",
+                        "mt",
+                        "my",
+                        "na",
+                        "nb",
+                        "nd",
+                        "ne",
+                        "ng",
+                        "nl",
+                        "nl-be",
+                        "nl-nl",
+                        "nn",
+                        "no",
+                        "nr",
+                        "ns",
+                        "nv",
+                        "ny",
+                        "oc",
+                        "oj",
+                        "om",
+                        "or",
+                        "os",
+                        "pa",
+                        "pi",
+                        "pl",
+                        "ps",
+                        "pt",
+                        "pt-br",
+                        "pt-pt",
+                        "qu",
+                        "qu-bo",
+                        "qu-ec",
+                        "qu-pe",
+                        "rm",
+                        "rn",
+                        "ro",
+                        "ru",
+                        "rw",
+                        "sa",
+                        "sb",
+                        "sc",
+                        "sd",
+                        "se",
+                        "se-fi",
+                        "se-no",
+                        "se-se",
+                        "sg",
+                        "sh",
+                        "si",
+                        "sk",
+                        "sl",
+                        "sm",
+                        "sn",
+                        "so",
+                        "sq",
+                        "sr",
+                        "sr-ba",
+                        "sr-sp",
+                        "ss",
+                        "st",
+                        "su",
+                        "sv",
+                        "sv-fi",
+                        "sv-se",
+                        "sw",
+                        "sx",
+                        "syr",
+                        "ta",
+                        "te",
+                        "tg",
+                        "th",
+                        "ti",
+                        "tk",
+                        "tl",
+                        "tn",
+                        "to",
+                        "tr",
+                        "ts",
+                        "tt",
+                        "tw",
+                        "ty",
+                        "ug",
+                        "uk",
+                        "ur",
+                        "us",
+                        "uz",
+                        "ve",
+                        "vi",
+                        "vo",
+                        "wa",
+                        "wo",
+                        "xh",
+                        "yi",
+                        "yo",
+                        "za",
+                        "zh",
+                        "zh-cn",
+                        "zh-hk",
+                        "zh-mo",
+                        "zh-sg",
+                        "zh-tw",
+                        "zu"
+                      ]
+                    }
+                  },
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": false
+            },
+            "meta": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "charset": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "http-equiv": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 1
+            },
+            "link": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "as": {
+                    "type": "string",
+                    "enum": [
+                      "audio",
+                      "document",
+                      "embed",
+                      "fetch",
+                      "font",
+                      "image",
+                      "object",
+                      "script",
+                      "style",
+                      "track",
+                      "video",
+                      "worker"
+                    ]
+                  },
+                  "crossorigin": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  },
+                  "hreflang": {
+                    "type": "string",
+                    "enum": [
+                      "aa",
+                      "ab",
+                      "ae",
+                      "af",
+                      "ak",
+                      "am",
+                      "an",
+                      "ar",
+                      "ar-ae",
+                      "ar-bh",
+                      "ar-dz",
+                      "ar-eg",
+                      "ar-iq",
+                      "ar-jo",
+                      "ar-kw",
+                      "ar-lb",
+                      "ar-ly",
+                      "ar-ma",
+                      "ar-om",
+                      "ar-qa",
+                      "ar-sa",
+                      "ar-sy",
+                      "ar-tn",
+                      "ar-ye",
+                      "as",
+                      "av",
+                      "ay",
+                      "az",
+                      "ba",
+                      "be",
+                      "bg",
+                      "bh",
+                      "bi",
+                      "bm",
+                      "bn",
+                      "bo",
+                      "br",
+                      "bs",
+                      "ca",
+                      "ce",
+                      "ch",
+                      "co",
+                      "cr",
+                      "cs",
+                      "cu",
+                      "cv",
+                      "cy",
+                      "da",
+                      "de",
+                      "de-at",
+                      "de-ch",
+                      "de-de",
+                      "de-li",
+                      "de-lu",
+                      "div",
+                      "dv",
+                      "dz",
+                      "ee",
+                      "el",
+                      "en",
+                      "en-au",
+                      "en-bz",
+                      "en-ca",
+                      "en-cb",
+                      "en-gb",
+                      "en-ie",
+                      "en-jm",
+                      "en-nz",
+                      "en-ph",
+                      "en-tt",
+                      "en-us",
+                      "en-za",
+                      "en-zw",
+                      "eo",
+                      "es",
+                      "es-ar",
+                      "es-bo",
+                      "es-cl",
+                      "es-co",
+                      "es-cr",
+                      "es-do",
+                      "es-ec",
+                      "es-es",
+                      "es-gt",
+                      "es-hn",
+                      "es-mx",
+                      "es-ni",
+                      "es-pa",
+                      "es-pe",
+                      "es-pr",
+                      "es-py",
+                      "es-sv",
+                      "es-us",
+                      "es-uy",
+                      "es-ve",
+                      "et",
+                      "eu",
+                      "fa",
+                      "ff",
+                      "fi",
+                      "fj",
+                      "fo",
+                      "fr",
+                      "fr-be",
+                      "fr-ca",
+                      "fr-ch",
+                      "fr-fr",
+                      "fr-lu",
+                      "fr-mc",
+                      "fy",
+                      "ga",
+                      "gd",
+                      "gl",
+                      "gn",
+                      "gu",
+                      "gv",
+                      "ha",
+                      "he",
+                      "hi",
+                      "ho",
+                      "hr",
+                      "hr-ba",
+                      "hr-hr",
+                      "ht",
+                      "hu",
+                      "hy",
+                      "hz",
+                      "ia",
+                      "id",
+                      "ie",
+                      "ig",
+                      "ii",
+                      "ik",
+                      "in",
+                      "io",
+                      "is",
+                      "it",
+                      "it-ch",
+                      "it-it",
+                      "iu",
+                      "iw",
+                      "ja",
+                      "ji",
+                      "jv",
+                      "jw",
+                      "ka",
+                      "kg",
+                      "ki",
+                      "kj",
+                      "kk",
+                      "kl",
+                      "km",
+                      "kn",
+                      "ko",
+                      "kok",
+                      "kr",
+                      "ks",
+                      "ku",
+                      "kv",
+                      "kw",
+                      "ky",
+                      "kz",
+                      "la",
+                      "lb",
+                      "lg",
+                      "li",
+                      "ln",
+                      "lo",
+                      "ls",
+                      "lt",
+                      "lu",
+                      "lv",
+                      "mg",
+                      "mh",
+                      "mi",
+                      "mk",
+                      "ml",
+                      "mn",
+                      "mo",
+                      "mr",
+                      "ms",
+                      "ms-bn",
+                      "ms-my",
+                      "mt",
+                      "my",
+                      "na",
+                      "nb",
+                      "nd",
+                      "ne",
+                      "ng",
+                      "nl",
+                      "nl-be",
+                      "nl-nl",
+                      "nn",
+                      "no",
+                      "nr",
+                      "ns",
+                      "nv",
+                      "ny",
+                      "oc",
+                      "oj",
+                      "om",
+                      "or",
+                      "os",
+                      "pa",
+                      "pi",
+                      "pl",
+                      "ps",
+                      "pt",
+                      "pt-br",
+                      "pt-pt",
+                      "qu",
+                      "qu-bo",
+                      "qu-ec",
+                      "qu-pe",
+                      "rm",
+                      "rn",
+                      "ro",
+                      "ru",
+                      "rw",
+                      "sa",
+                      "sb",
+                      "sc",
+                      "sd",
+                      "se",
+                      "se-fi",
+                      "se-no",
+                      "se-se",
+                      "sg",
+                      "sh",
+                      "si",
+                      "sk",
+                      "sl",
+                      "sm",
+                      "sn",
+                      "so",
+                      "sq",
+                      "sr",
+                      "sr-ba",
+                      "sr-sp",
+                      "ss",
+                      "st",
+                      "su",
+                      "sv",
+                      "sv-fi",
+                      "sv-se",
+                      "sw",
+                      "sx",
+                      "syr",
+                      "ta",
+                      "te",
+                      "tg",
+                      "th",
+                      "ti",
+                      "tk",
+                      "tl",
+                      "tn",
+                      "to",
+                      "tr",
+                      "ts",
+                      "tt",
+                      "tw",
+                      "ty",
+                      "ug",
+                      "uk",
+                      "ur",
+                      "us",
+                      "uz",
+                      "ve",
+                      "vi",
+                      "vo",
+                      "wa",
+                      "wo",
+                      "xh",
+                      "yi",
+                      "yo",
+                      "za",
+                      "zh",
+                      "zh-cn",
+                      "zh-hk",
+                      "zh-mo",
+                      "zh-sg",
+                      "zh-tw",
+                      "zu"
+                    ]
+                  },
+                  "integrity": {
+                    "type": "string"
+                  },
+                  "media": {
+                    "type": "string"
+                  },
+                  "referrerpolicy": {
+                    "type": "string",
+                    "enum": [
+                      "no-referrer",
+                      "no-referrer-when-downgrade",
+                      "origin",
+                      "origin-when-cross-origin",
+                      "unsafe-url"
+                    ]
+                  },
+                  "rel": {
+                    "type": "string",
+                    "enum": [
+                      "alternate",
+                      "author",
+                      "bookmark",
+                      "canonical",
+                      "compression-dictionary",
+                      "dns-prefetch",
+                      "external",
+                      "expect",
+                      "help",
+                      "icon",
+                      "license",
+                      "manifest",
+                      "modulepreload",
+                      "next",
+                      "nofollow",
+                      "noopener",
+                      "noreferrer",
+                      "opener",
+                      "pingback",
+                      "preconnect",
+                      "prefetch",
+                      "preload",
+                      "prerender",
+                      "prev",
+                      "privacy-policy",
+                      "search",
+                      "stylesheet",
+                      "tag",
+                      "terms-of-service"
+                    ]
+                  },
+                  "sizes": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 1
+            },
+            "script": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "async": {
+                    "type": "string"
+                  },
+                  "crossorigin": {
+                    "type": "string"
+                  },
+                  "defer": {
+                    "type": "string"
+                  },
+                  "integrity": {
+                    "type": "string"
+                  },
+                  "language": {
+                    "type": "string",
+                    "enum": [
+                      "aa",
+                      "ab",
+                      "ae",
+                      "af",
+                      "ak",
+                      "am",
+                      "an",
+                      "ar",
+                      "ar-ae",
+                      "ar-bh",
+                      "ar-dz",
+                      "ar-eg",
+                      "ar-iq",
+                      "ar-jo",
+                      "ar-kw",
+                      "ar-lb",
+                      "ar-ly",
+                      "ar-ma",
+                      "ar-om",
+                      "ar-qa",
+                      "ar-sa",
+                      "ar-sy",
+                      "ar-tn",
+                      "ar-ye",
+                      "as",
+                      "av",
+                      "ay",
+                      "az",
+                      "ba",
+                      "be",
+                      "bg",
+                      "bh",
+                      "bi",
+                      "bm",
+                      "bn",
+                      "bo",
+                      "br",
+                      "bs",
+                      "ca",
+                      "ce",
+                      "ch",
+                      "co",
+                      "cr",
+                      "cs",
+                      "cu",
+                      "cv",
+                      "cy",
+                      "da",
+                      "de",
+                      "de-at",
+                      "de-ch",
+                      "de-de",
+                      "de-li",
+                      "de-lu",
+                      "div",
+                      "dv",
+                      "dz",
+                      "ee",
+                      "el",
+                      "en",
+                      "en-au",
+                      "en-bz",
+                      "en-ca",
+                      "en-cb",
+                      "en-gb",
+                      "en-ie",
+                      "en-jm",
+                      "en-nz",
+                      "en-ph",
+                      "en-tt",
+                      "en-us",
+                      "en-za",
+                      "en-zw",
+                      "eo",
+                      "es",
+                      "es-ar",
+                      "es-bo",
+                      "es-cl",
+                      "es-co",
+                      "es-cr",
+                      "es-do",
+                      "es-ec",
+                      "es-es",
+                      "es-gt",
+                      "es-hn",
+                      "es-mx",
+                      "es-ni",
+                      "es-pa",
+                      "es-pe",
+                      "es-pr",
+                      "es-py",
+                      "es-sv",
+                      "es-us",
+                      "es-uy",
+                      "es-ve",
+                      "et",
+                      "eu",
+                      "fa",
+                      "ff",
+                      "fi",
+                      "fj",
+                      "fo",
+                      "fr",
+                      "fr-be",
+                      "fr-ca",
+                      "fr-ch",
+                      "fr-fr",
+                      "fr-lu",
+                      "fr-mc",
+                      "fy",
+                      "ga",
+                      "gd",
+                      "gl",
+                      "gn",
+                      "gu",
+                      "gv",
+                      "ha",
+                      "he",
+                      "hi",
+                      "ho",
+                      "hr",
+                      "hr-ba",
+                      "hr-hr",
+                      "ht",
+                      "hu",
+                      "hy",
+                      "hz",
+                      "ia",
+                      "id",
+                      "ie",
+                      "ig",
+                      "ii",
+                      "ik",
+                      "in",
+                      "io",
+                      "is",
+                      "it",
+                      "it-ch",
+                      "it-it",
+                      "iu",
+                      "iw",
+                      "ja",
+                      "ji",
+                      "jv",
+                      "jw",
+                      "ka",
+                      "kg",
+                      "ki",
+                      "kj",
+                      "kk",
+                      "kl",
+                      "km",
+                      "kn",
+                      "ko",
+                      "kok",
+                      "kr",
+                      "ks",
+                      "ku",
+                      "kv",
+                      "kw",
+                      "ky",
+                      "kz",
+                      "la",
+                      "lb",
+                      "lg",
+                      "li",
+                      "ln",
+                      "lo",
+                      "ls",
+                      "lt",
+                      "lu",
+                      "lv",
+                      "mg",
+                      "mh",
+                      "mi",
+                      "mk",
+                      "ml",
+                      "mn",
+                      "mo",
+                      "mr",
+                      "ms",
+                      "ms-bn",
+                      "ms-my",
+                      "mt",
+                      "my",
+                      "na",
+                      "nb",
+                      "nd",
+                      "ne",
+                      "ng",
+                      "nl",
+                      "nl-be",
+                      "nl-nl",
+                      "nn",
+                      "no",
+                      "nr",
+                      "ns",
+                      "nv",
+                      "ny",
+                      "oc",
+                      "oj",
+                      "om",
+                      "or",
+                      "os",
+                      "pa",
+                      "pi",
+                      "pl",
+                      "ps",
+                      "pt",
+                      "pt-br",
+                      "pt-pt",
+                      "qu",
+                      "qu-bo",
+                      "qu-ec",
+                      "qu-pe",
+                      "rm",
+                      "rn",
+                      "ro",
+                      "ru",
+                      "rw",
+                      "sa",
+                      "sb",
+                      "sc",
+                      "sd",
+                      "se",
+                      "se-fi",
+                      "se-no",
+                      "se-se",
+                      "sg",
+                      "sh",
+                      "si",
+                      "sk",
+                      "sl",
+                      "sm",
+                      "sn",
+                      "so",
+                      "sq",
+                      "sr",
+                      "sr-ba",
+                      "sr-sp",
+                      "ss",
+                      "st",
+                      "su",
+                      "sv",
+                      "sv-fi",
+                      "sv-se",
+                      "sw",
+                      "sx",
+                      "syr",
+                      "ta",
+                      "te",
+                      "tg",
+                      "th",
+                      "ti",
+                      "tk",
+                      "tl",
+                      "tn",
+                      "to",
+                      "tr",
+                      "ts",
+                      "tt",
+                      "tw",
+                      "ty",
+                      "ug",
+                      "uk",
+                      "ur",
+                      "us",
+                      "uz",
+                      "ve",
+                      "vi",
+                      "vo",
+                      "wa",
+                      "wo",
+                      "xh",
+                      "yi",
+                      "yo",
+                      "za",
+                      "zh",
+                      "zh-cn",
+                      "zh-hk",
+                      "zh-mo",
+                      "zh-sg",
+                      "zh-tw",
+                      "zu"
+                    ]
+                  },
+                  "referrerpolicy": {
+                    "type": "string",
+                    "enum": [
+                      "no-referrer",
+                      "no-referrer-when-downgrade",
+                      "origin",
+                      "origin-when-cross-origin",
+                      "unsafe-url"
+                    ]
+                  },
+                  "src": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "highLight": {
+          "type": "boolean"
+        },
+        "markedExteisions": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MarkedExtension"
+              }
+            },
+            {
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 0
+            }
+          ]
+        }
+      },
+      "required": [
+        "markedExteisions"
+      ],
+      "additionalProperties": false
+    },
+    "MarkedExtension": {
+      "type": "object",
+      "properties": {
+        "async": {
+          "type": "boolean",
+          "description": "True will tell marked to await any walkTokens functions before parsing the tokens and returning an HTML string."
+        },
+        "breaks": {
+          "type": "boolean",
+          "description": "Enable GFM line breaks. This option requires the gfm option to be true."
+        },
+        "extensions": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TokenizerAndRendererExtension"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Add tokenizers and renderers to marked"
+        },
+        "gfm": {
+          "type": "boolean",
+          "description": "Enable GitHub flavored markdown."
+        },
+        "hooks": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/HooksObject"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Hooks are methods that hook into some part of marked. preprocess is called to process markdown before sending it to marked. processAllTokens is called with the TokensList before walkTokens. postprocess is called to process html after marked has finished parsing. provideLexer is called to provide a function to tokenize markdown. provideParser is called to provide a function to parse tokens."
+        },
+        "pedantic": {
+          "type": "boolean",
+          "description": "Conform to obscure parts of markdown.pl as much as possible. Don't fix any of the original markdown bugs or poor behavior."
+        },
+        "renderer": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/RendererObject"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Type: object Default: new Renderer()\n\nAn object containing functions to render tokens to HTML."
+        },
+        "silent": {
+          "type": "boolean",
+          "description": "Shows an HTML error message when rendering fails."
+        },
+        "tokenizer": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/TokenizerObject"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The tokenizer defines how to turn markdown text into tokens."
+        },
+        "walkTokens": {
+          "anyOf": [
+            {
+              "$comment": "(token: Token) => void | Promise<void>",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "$ref": "#/definitions/Token"
+                    }
+                  },
+                  "required": [
+                    "token"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The walkTokens function gets called with every token. Child tokens are called before moving on to sibling tokens. Each token is passed by reference so updates are persisted when passed to the parser. The return value of the function is ignored."
+        }
+      },
+      "additionalProperties": false
+    },
+    "TokenizerAndRendererExtension": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/TokenizerExtension"
+        },
+        {
+          "$ref": "#/definitions/RendererExtension"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "renderer": {
+              "$ref": "#/definitions/RendererExtensionFunction"
+            },
+            "level": {
+              "type": "string",
+              "enum": [
+                "block",
+                "inline"
+              ]
+            },
+            "start": {
+              "$ref": "#/definitions/TokenizerStartFunction"
+            },
+            "tokenizer": {
+              "$ref": "#/definitions/TokenizerExtensionFunction"
+            },
+            "childTokens": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "level",
+            "name",
+            "renderer",
+            "tokenizer"
+          ]
+        }
+      ]
+    },
+    "TokenizerExtension": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string",
+          "enum": [
+            "block",
+            "inline"
+          ]
+        },
+        "start": {
+          "$ref": "#/definitions/TokenizerStartFunction"
+        },
+        "tokenizer": {
+          "$ref": "#/definitions/TokenizerExtensionFunction"
+        },
+        "childTokens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "level",
+        "tokenizer"
+      ],
+      "additionalProperties": false
+    },
+    "TokenizerStartFunction": {
+      "$comment": "(this: TokenizerThis, src: string) => number | void",
+      "type": "object",
+      "properties": {
+        "namedArgs": {
+          "type": "object",
+          "properties": {
+            "this": {
+              "$ref": "#/definitions/TokenizerThis"
+            },
+            "src": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "this",
+            "src"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "TokenizerThis": {
+      "type": "object",
+      "properties": {
+        "lexer": {
+          "type": "object",
+          "properties": {
+            "tokens": {
+              "$ref": "#/definitions/TokensList"
+            },
+            "options": {
+              "$ref": "#/definitions/MarkedOptions"
+            },
+            "state": {
+              "type": "object",
+              "properties": {
+                "inLink": {
+                  "type": "boolean"
+                },
+                "inRawBlock": {
+                  "type": "boolean"
+                },
+                "top": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "inLink",
+                "inRawBlock",
+                "top"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "tokens",
+            "options",
+            "state"
+          ],
+          "additionalProperties": false,
+          "description": "Block Lexer"
+        }
+      },
+      "required": [
+        "lexer"
+      ],
+      "additionalProperties": false
+    },
+    "TokensList": {
+      "allOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "links": {
+              "$ref": "#/definitions/Links"
+            }
+          },
+          "required": [
+            "links"
+          ]
+        }
+      ]
+    },
+    "Token": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/MarkedToken"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Generic"
+        }
+      ]
+    },
+    "MarkedToken": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Tokens.Blockquote"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Br"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Code"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Codespan"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Def"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Del"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Em"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Escape"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Heading"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Hr"
+        },
+        {
+          "$ref": "#/definitions/Tokens.HTML"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Image"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Link"
+        },
+        {
+          "$ref": "#/definitions/Tokens.List"
+        },
+        {
+          "$ref": "#/definitions/Tokens.ListItem"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Paragraph"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Space"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Strong"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Table"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Tag"
+        },
+        {
+          "$ref": "#/definitions/Tokens.Text"
+        }
+      ]
+    },
+    "Tokens.Blockquote": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "blockquote"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Br": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "br"
+        },
+        "raw": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "raw"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Code": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "code"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "codeBlockStyle": {
+          "type": "string",
+          "const": "indented"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "escaped": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Codespan": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "codespan"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Def": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "def"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "tag": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "tag",
+        "href",
+        "title"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Del": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "del"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Em": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "em"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Escape": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "escape"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Heading": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "heading"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "depth": {
+          "type": "number"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "depth",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Hr": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "hr"
+        },
+        "raw": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "raw"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.HTML": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "html"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "pre": {
+          "type": "boolean"
+        },
+        "text": {
+          "type": "string"
+        },
+        "block": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "pre",
+        "text",
+        "block"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Image": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "image"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "href",
+        "title",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Link": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "link"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "href",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.List": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "list"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "ordered": {
+          "type": "boolean"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string",
+              "const": ""
+            }
+          ]
+        },
+        "loose": {
+          "type": "boolean"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tokens.ListItem"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "ordered",
+        "start",
+        "loose",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.ListItem": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "list_item"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "task": {
+          "type": "boolean"
+        },
+        "checked": {
+          "type": "boolean"
+        },
+        "loose": {
+          "type": "boolean"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "task",
+        "loose",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Paragraph": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "paragraph"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "pre": {
+          "type": "boolean"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Space": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "space"
+        },
+        "raw": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "raw"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Strong": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "strong"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text",
+        "tokens"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Table": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "table"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "align": {
+          "type": "array",
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "center",
+              "left",
+              "right",
+              null
+            ]
+          }
+        },
+        "header": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tokens.TableCell"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Tokens.TableCell"
+            }
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "align",
+        "header",
+        "rows"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.TableCell": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        },
+        "header": {
+          "type": "boolean"
+        },
+        "align": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "center",
+            "left",
+            "right",
+            null
+          ]
+        }
+      },
+      "required": [
+        "text",
+        "tokens",
+        "header",
+        "align"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Tag": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "html"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "inLink": {
+          "type": "boolean"
+        },
+        "inRawBlock": {
+          "type": "boolean"
+        },
+        "text": {
+          "type": "string"
+        },
+        "block": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "inLink",
+        "inRawBlock",
+        "text",
+        "block"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Text": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "text"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        },
+        "escaped": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "type",
+        "raw",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "Tokens.Generic": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "raw": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "raw"
+      ]
+    },
+    "Links": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "href"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "MarkedOptions": {
+      "type": "object",
+      "properties": {
+        "hooks": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "$ref": "#/definitions/MarkedOptions"
+                },
+                "block": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "options"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Hooks are methods that hook into some part of marked."
+        },
+        "renderer": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "$ref": "#/definitions/MarkedOptions"
+                },
+                "parser": {
+                  "type": "object",
+                  "properties": {
+                    "options": {
+                      "$ref": "#/definitions/MarkedOptions"
+                    },
+                    "renderer": {
+                      "$ref": "#/definitions/class-287282579-3073-4178-287282579-0-209421227450842"
+                    },
+                    "textRenderer": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "description": "TextRenderer returns only the textual part of the token"
+                    }
+                  },
+                  "required": [
+                    "options",
+                    "renderer",
+                    "textRenderer"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Parsing & Compiling"
+                }
+              },
+              "required": [
+                "options",
+                "parser"
+              ],
+              "additionalProperties": false,
+              "description": "Renderer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Type: object Default: new Renderer()\n\nAn object containing functions to render tokens to HTML."
+        },
+        "tokenizer": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "$ref": "#/definitions/MarkedOptions"
+                },
+                "rules": {
+                  "$ref": "#/definitions/Rules"
+                },
+                "lexer": {
+                  "$ref": "#/definitions/class-287282579-13955-16750-287282579-0-20942389556510"
+                }
+              },
+              "required": [
+                "options",
+                "rules",
+                "lexer"
+              ],
+              "additionalProperties": false,
+              "description": "Tokenizer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The tokenizer defines how to turn markdown text into tokens."
+        },
+        "extensions": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "renderers": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "$ref": "#/definitions/RendererExtensionFunction"
+                  }
+                },
+                "childTokens": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "inline": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/TokenizerExtensionFunction"
+                  }
+                },
+                "block": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/TokenizerExtensionFunction"
+                  }
+                },
+                "startInline": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/TokenizerStartFunction"
+                  }
+                },
+                "startBlock": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/TokenizerStartFunction"
+                  }
+                }
+              },
+              "required": [
+                "renderers",
+                "childTokens"
+              ],
+              "additionalProperties": false
+            }
+          ],
+          "description": "Custom extensions"
+        },
+        "walkTokens": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$comment": "(token: Token) => void | Promise<void> | (void | Promise<void>)[]",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "$ref": "#/definitions/Token"
+                    }
+                  },
+                  "required": [
+                    "token"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          ],
+          "description": "walkTokens function returns array of values for Promise.all"
+        }
+      },
+      "additionalProperties": false
+    },
+    "class-287282579-3073-4178-287282579-0-209421227450842": {
+      "type": "object",
+      "properties": {
+        "options": {
+          "$ref": "#/definitions/MarkedOptions"
+        },
+        "parser": {
+          "type": "object",
+          "properties": {
+            "options": {
+              "$ref": "#/definitions/MarkedOptions"
+            },
+            "renderer": {
+              "$ref": "#/definitions/class-287282579-3073-4178-287282579-0-209421227450842"
+            },
+            "textRenderer": {
+              "type": "object",
+              "additionalProperties": false,
+              "description": "TextRenderer returns only the textual part of the token"
+            }
+          },
+          "required": [
+            "options",
+            "renderer",
+            "textRenderer"
+          ],
+          "additionalProperties": false,
+          "description": "Parsing & Compiling"
+        }
+      },
+      "required": [
+        "options",
+        "parser"
+      ],
+      "additionalProperties": false,
+      "description": "Renderer"
+    },
+    "Rules": {
+      "type": "object",
+      "properties": {
+        "other": {
+          "type": "object",
+          "properties": {
+            "codeRemoveIndent": {
+              "type": "string",
+              "format": "regex"
+            },
+            "outputLinkReplace": {
+              "type": "string",
+              "format": "regex"
+            },
+            "indentCodeCompensation": {
+              "type": "string",
+              "format": "regex"
+            },
+            "beginningSpace": {
+              "type": "string",
+              "format": "regex"
+            },
+            "endingHash": {
+              "type": "string",
+              "format": "regex"
+            },
+            "startingSpaceChar": {
+              "type": "string",
+              "format": "regex"
+            },
+            "endingSpaceChar": {
+              "type": "string",
+              "format": "regex"
+            },
+            "nonSpaceChar": {
+              "type": "string",
+              "format": "regex"
+            },
+            "newLineCharGlobal": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tabCharGlobal": {
+              "type": "string",
+              "format": "regex"
+            },
+            "multipleSpaceGlobal": {
+              "type": "string",
+              "format": "regex"
+            },
+            "blankLine": {
+              "type": "string",
+              "format": "regex"
+            },
+            "doubleBlankLine": {
+              "type": "string",
+              "format": "regex"
+            },
+            "blockquoteStart": {
+              "type": "string",
+              "format": "regex"
+            },
+            "blockquoteSetextReplace": {
+              "type": "string",
+              "format": "regex"
+            },
+            "blockquoteSetextReplace2": {
+              "type": "string",
+              "format": "regex"
+            },
+            "listReplaceTabs": {
+              "type": "string",
+              "format": "regex"
+            },
+            "listReplaceNesting": {
+              "type": "string",
+              "format": "regex"
+            },
+            "listIsTask": {
+              "type": "string",
+              "format": "regex"
+            },
+            "listReplaceTask": {
+              "type": "string",
+              "format": "regex"
+            },
+            "anyLine": {
+              "type": "string",
+              "format": "regex"
+            },
+            "hrefBrackets": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tableDelimiter": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tableAlignChars": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tableRowBlankLine": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tableAlignRight": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tableAlignCenter": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tableAlignLeft": {
+              "type": "string",
+              "format": "regex"
+            },
+            "startATag": {
+              "type": "string",
+              "format": "regex"
+            },
+            "endATag": {
+              "type": "string",
+              "format": "regex"
+            },
+            "startPreScriptTag": {
+              "type": "string",
+              "format": "regex"
+            },
+            "endPreScriptTag": {
+              "type": "string",
+              "format": "regex"
+            },
+            "startAngleBracket": {
+              "type": "string",
+              "format": "regex"
+            },
+            "endAngleBracket": {
+              "type": "string",
+              "format": "regex"
+            },
+            "pedanticHrefTitle": {
+              "type": "string",
+              "format": "regex"
+            },
+            "unicodeAlphaNumeric": {
+              "type": "string",
+              "format": "regex"
+            },
+            "escapeTest": {
+              "type": "string",
+              "format": "regex"
+            },
+            "escapeReplace": {
+              "type": "string",
+              "format": "regex"
+            },
+            "escapeTestNoEncode": {
+              "type": "string",
+              "format": "regex"
+            },
+            "escapeReplaceNoEncode": {
+              "type": "string",
+              "format": "regex"
+            },
+            "unescapeTest": {
+              "type": "string",
+              "format": "regex"
+            },
+            "caret": {
+              "type": "string",
+              "format": "regex"
+            },
+            "percentDecode": {
+              "type": "string",
+              "format": "regex"
+            },
+            "findPipe": {
+              "type": "string",
+              "format": "regex"
+            },
+            "splitPipe": {
+              "type": "string",
+              "format": "regex"
+            },
+            "slashPipe": {
+              "type": "string",
+              "format": "regex"
+            },
+            "carriageReturn": {
+              "type": "string",
+              "format": "regex"
+            },
+            "spaceLine": {
+              "type": "string",
+              "format": "regex"
+            },
+            "notSpaceStart": {
+              "type": "string",
+              "format": "regex"
+            },
+            "endingNewline": {
+              "type": "string",
+              "format": "regex"
+            },
+            "listItemRegex": {
+              "$comment": "(bull: string) => RegExp",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "bull": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "bull"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "nextBulletRegex": {
+              "$comment": "(indent: number) => RegExp",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "indent": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "indent"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "hrRegex": {
+              "$comment": "(indent: number) => RegExp",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "indent": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "indent"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "fencesBeginRegex": {
+              "$comment": "(indent: number) => RegExp",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "indent": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "indent"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "headingBeginRegex": {
+              "$comment": "(indent: number) => RegExp",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "indent": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "indent"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "htmlBeginRegex": {
+              "$comment": "(indent: number) => RegExp",
+              "type": "object",
+              "properties": {
+                "namedArgs": {
+                  "type": "object",
+                  "properties": {
+                    "indent": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "indent"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "required": [
+            "codeRemoveIndent",
+            "outputLinkReplace",
+            "indentCodeCompensation",
+            "beginningSpace",
+            "endingHash",
+            "startingSpaceChar",
+            "endingSpaceChar",
+            "nonSpaceChar",
+            "newLineCharGlobal",
+            "tabCharGlobal",
+            "multipleSpaceGlobal",
+            "blankLine",
+            "doubleBlankLine",
+            "blockquoteStart",
+            "blockquoteSetextReplace",
+            "blockquoteSetextReplace2",
+            "listReplaceTabs",
+            "listReplaceNesting",
+            "listIsTask",
+            "listReplaceTask",
+            "anyLine",
+            "hrefBrackets",
+            "tableDelimiter",
+            "tableAlignChars",
+            "tableRowBlankLine",
+            "tableAlignRight",
+            "tableAlignCenter",
+            "tableAlignLeft",
+            "startATag",
+            "endATag",
+            "startPreScriptTag",
+            "endPreScriptTag",
+            "startAngleBracket",
+            "endAngleBracket",
+            "pedanticHrefTitle",
+            "unicodeAlphaNumeric",
+            "escapeTest",
+            "escapeReplace",
+            "escapeTestNoEncode",
+            "escapeReplaceNoEncode",
+            "unescapeTest",
+            "caret",
+            "percentDecode",
+            "findPipe",
+            "splitPipe",
+            "slashPipe",
+            "carriageReturn",
+            "spaceLine",
+            "notSpaceStart",
+            "endingNewline",
+            "listItemRegex",
+            "nextBulletRegex",
+            "hrRegex",
+            "fencesBeginRegex",
+            "headingBeginRegex",
+            "htmlBeginRegex"
+          ],
+          "additionalProperties": false
+        },
+        "block": {
+          "type": "object",
+          "properties": {
+            "blockquote": {
+              "type": "string",
+              "format": "regex"
+            },
+            "code": {
+              "type": "string",
+              "format": "regex"
+            },
+            "def": {
+              "type": "string",
+              "format": "regex"
+            },
+            "fences": {
+              "type": "string",
+              "format": "regex"
+            },
+            "heading": {
+              "type": "string",
+              "format": "regex"
+            },
+            "hr": {
+              "type": "string",
+              "format": "regex"
+            },
+            "html": {
+              "type": "string",
+              "format": "regex"
+            },
+            "lheading": {
+              "type": "string",
+              "format": "regex"
+            },
+            "list": {
+              "type": "string",
+              "format": "regex"
+            },
+            "newline": {
+              "type": "string",
+              "format": "regex"
+            },
+            "paragraph": {
+              "type": "string",
+              "format": "regex"
+            },
+            "table": {
+              "type": "string",
+              "format": "regex"
+            },
+            "text": {
+              "type": "string",
+              "format": "regex"
+            }
+          },
+          "required": [
+            "blockquote",
+            "code",
+            "def",
+            "fences",
+            "heading",
+            "hr",
+            "html",
+            "lheading",
+            "list",
+            "newline",
+            "paragraph",
+            "table",
+            "text"
+          ],
+          "additionalProperties": false
+        },
+        "inline": {
+          "type": "object",
+          "properties": {
+            "_backpedal": {
+              "type": "string",
+              "format": "regex"
+            },
+            "anyPunctuation": {
+              "type": "string",
+              "format": "regex"
+            },
+            "autolink": {
+              "type": "string",
+              "format": "regex"
+            },
+            "blockSkip": {
+              "type": "string",
+              "format": "regex"
+            },
+            "br": {
+              "type": "string",
+              "format": "regex"
+            },
+            "code": {
+              "type": "string",
+              "format": "regex"
+            },
+            "del": {
+              "type": "string",
+              "format": "regex"
+            },
+            "emStrongLDelim": {
+              "type": "string",
+              "format": "regex"
+            },
+            "emStrongRDelimAst": {
+              "type": "string",
+              "format": "regex"
+            },
+            "emStrongRDelimUnd": {
+              "type": "string",
+              "format": "regex"
+            },
+            "escape": {
+              "type": "string",
+              "format": "regex"
+            },
+            "link": {
+              "type": "string",
+              "format": "regex"
+            },
+            "nolink": {
+              "type": "string",
+              "format": "regex"
+            },
+            "punctuation": {
+              "type": "string",
+              "format": "regex"
+            },
+            "reflink": {
+              "type": "string",
+              "format": "regex"
+            },
+            "reflinkSearch": {
+              "type": "string",
+              "format": "regex"
+            },
+            "tag": {
+              "type": "string",
+              "format": "regex"
+            },
+            "text": {
+              "type": "string",
+              "format": "regex"
+            },
+            "url": {
+              "type": "string",
+              "format": "regex"
+            }
+          },
+          "required": [
+            "_backpedal",
+            "anyPunctuation",
+            "autolink",
+            "blockSkip",
+            "br",
+            "code",
+            "del",
+            "emStrongLDelim",
+            "emStrongRDelimAst",
+            "emStrongRDelimUnd",
+            "escape",
+            "link",
+            "nolink",
+            "punctuation",
+            "reflink",
+            "reflinkSearch",
+            "tag",
+            "text",
+            "url"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "other",
+        "block",
+        "inline"
+      ],
+      "additionalProperties": false
+    },
+    "class-287282579-13955-16750-287282579-0-20942389556510": {
+      "type": "object",
+      "properties": {
+        "tokens": {
+          "$ref": "#/definitions/TokensList"
+        },
+        "options": {
+          "$ref": "#/definitions/MarkedOptions"
+        },
+        "state": {
+          "type": "object",
+          "properties": {
+            "inLink": {
+              "type": "boolean"
+            },
+            "inRawBlock": {
+              "type": "boolean"
+            },
+            "top": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "inLink",
+            "inRawBlock",
+            "top"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "tokens",
+        "options",
+        "state"
+      ],
+      "additionalProperties": false,
+      "description": "Block Lexer"
+    },
+    "RendererExtensionFunction": {
+      "$comment": "(this: RendererThis, token: Tokens.Generic) => string | false | undefined",
+      "type": "object",
+      "properties": {
+        "namedArgs": {
+          "type": "object",
+          "properties": {
+            "this": {
+              "$ref": "#/definitions/RendererThis"
+            },
+            "token": {
+              "$ref": "#/definitions/Tokens.Generic"
+            }
+          },
+          "required": [
+            "this",
+            "token"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "RendererThis": {
+      "type": "object",
+      "properties": {
+        "parser": {
+          "type": "object",
+          "properties": {
+            "options": {
+              "$ref": "#/definitions/MarkedOptions"
+            },
+            "renderer": {
+              "type": "object",
+              "properties": {
+                "options": {
+                  "$ref": "#/definitions/MarkedOptions"
+                },
+                "parser": {
+                  "type": "object",
+                  "properties": {
+                    "options": {
+                      "$ref": "#/definitions/MarkedOptions"
+                    },
+                    "renderer": {
+                      "$ref": "#/definitions/class-287282579-3073-4178-287282579-0-209421227450842"
+                    },
+                    "textRenderer": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "description": "TextRenderer returns only the textual part of the token"
+                    }
+                  },
+                  "required": [
+                    "options",
+                    "renderer",
+                    "textRenderer"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Parsing & Compiling"
+                }
+              },
+              "required": [
+                "options",
+                "parser"
+              ],
+              "additionalProperties": false,
+              "description": "Renderer"
+            },
+            "textRenderer": {
+              "type": "object",
+              "additionalProperties": false,
+              "description": "TextRenderer returns only the textual part of the token"
+            }
+          },
+          "required": [
+            "options",
+            "renderer",
+            "textRenderer"
+          ],
+          "additionalProperties": false,
+          "description": "Parsing & Compiling"
+        }
+      },
+      "required": [
+        "parser"
+      ],
+      "additionalProperties": false
+    },
+    "TokenizerExtensionFunction": {
+      "$comment": "(this: TokenizerThis, src: string, tokens: Token[] | TokensList) => Tokens.Generic | undefined",
+      "type": "object",
+      "properties": {
+        "namedArgs": {
+          "type": "object",
+          "properties": {
+            "this": {
+              "$ref": "#/definitions/TokenizerThis"
+            },
+            "src": {
+              "type": "string"
+            },
+            "tokens": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Token"
+                  }
+                },
+                {
+                  "$ref": "#/definitions/TokensList"
+                }
+              ]
+            }
+          },
+          "required": [
+            "this",
+            "src",
+            "tokens"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "RendererExtension": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "renderer": {
+          "$ref": "#/definitions/RendererExtensionFunction"
+        }
+      },
+      "required": [
+        "name",
+        "renderer"
+      ],
+      "additionalProperties": false
+    },
+    "HooksObject": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "RendererObject": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "TokenizerObject": {
+      "type": "object",
+      "additionalProperties": false
+    }
+  }
+}
